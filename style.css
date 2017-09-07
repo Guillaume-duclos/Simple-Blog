@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  min-height: 100%;
+}
+
+.block-page {
+  padding: 0 50px 0 50px;
+  width: 100%;
+}
+
+/* ========================= COMMON ========================= */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.anim {
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.no_content {
+  font-size: 3em;
+  opacity: .6;
+  text-align: center;
+  color: #34495e;
+}
+
+/* ========================= HEADER ========================= */
+
+header {
+  background-color: #3498db;
+  margin-bottom: 20px;
+}
+
+.title {
+  background-color: #3498db;
+  height: 100px;
+}
+
+h1 {
+  margin: auto;
+}
+
+h1 a {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu {
+  background-color: #34495e;
+  width: 100%;
+  height: 50px;
+}
+
+.add-article {
+  color: #ffffff;
+  list-style-type: none;
+  margin: auto;
+  padding: 5px 15px 5px 15px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+/* ========================= ARTICLE ========================= */
+
+.block-article {
+  margin-top: 20px;
+}
+
+.article {
+  padding: 15px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  -moz-box-shadow: 0px 0px 5px 0px #656565;
+  -webkit-box-shadow: 0px 0px 5px 0px #656565;
+  -o-box-shadow: 0px 0px 5px 0px #656565;
+  box-shadow: 0px 0px 5px 0px #656565;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);
+}
+
+.min_article {
+  max-width: 320px;
+  min-width: 250px;
+  margin: 15px;
+  display: inline-block;
+}
+
+.columns {
+	-webkit-column-gap: 15px;
+	-webkit-column-fill: auto;
+	-moz-column-gap: 15px;
+	-moz-column-fill: auto;
+	column-gap: 15px;
+	column-fill: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8em;
+  line-height: 1.6em;
+  color: #34495e;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #34495e;
+  margin: 10px 0 10px 0;
+}
+
+.article-infos {
+  opacity: .6;
+  font-size: .9em;
+  color: #34495e;
+}
+
+.article img {
+  display: block;
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+
+.paragraphe {
+  margin: 10px 0 10px 0;
+  opacity: .9;
+  text-align: justify;
+  line-height: 1.3em;
+  color: #34495e;
+}
+
+.article a {
+  display: block;
+  margin: auto;
+  color: #ffffff;
+  padding: 5px 15px 5px 15px;
+  background-color: #3498db;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.complet_article {
+  width: 60%;
+  margin: auto;
+}
+
+.comment {
+  padding: 20px 50px 20px 50px;
+  width: 60%;
+  margin: 20px auto;
+}
+
+/* ========================= FORM ========================= */
+
+form {
+  padding: 0 50px 0 50px;
+  width: 50%;
+  position: relative;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 30px 0 30px 0;
+  border-radius: 3px;
+  -moz-box-shadow: 0px 0px 5px 0px #656565;
+  -webkit-box-shadow: 0px 0px 5px 0px #656565;
+  -o-box-shadow: 0px 0px 5px 0px #656565;
+  box-shadow: 0px 0px 5px 0px #656565;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);
+}
+
+form input, form textarea, form select {
+  display: block;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #bdc3c7;
+  border-radius: 3px;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+  outline: none;
+}
+
+label {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+form textarea {
+  min-height: 250px;
+  max-height: 400px;
+  max-width: 80%;
+  font-family: 'Arial', sans-serif;
+  padding-top: 5px;
+}
+
+.submit {
+  background-color: #3498db;
+  border-color: #2980b9;
+  color: #ffffff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.feed_back {
+  width: auto;
+  border: 1px solid #bdc3c7;
+  text-align: center;
+  width: 80%;
+  border-radius: 3px;
+  height: 30px;
+  margin: 10px auto;
+  line-height: 30px;
+}
+
+.form_comment {
+  margin-top: 30px;
+  width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+  form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 90%;
+  }
+}
+
+/* ========================= FOOTER ========================= */
+
+footer {
+  background-color: #34495e;
+  height: 100px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: auto;
+  color: #ffffff;
+}
